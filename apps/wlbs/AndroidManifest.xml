@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluecanna.wifimapbuilder"
+    android:versionCode="1"
+    android:versionName="1.0"
+ 
+android:installLocation="internalOnly">
+
+    <uses-sdk android:minSdkVersion="11" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+     <uses-permission android:name="android.permission.CAMERA"/> 
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<application android:icon="@drawable/maplog" android:label="@string/app_name" android:description="@string/app_desc">
+        <activity android:name="PointSettingActivity"></activity>
+        <activity android:name="PointsList" android:theme="@style/AppTheme"></activity>
+        <activity android:name="ScanSettingActivity"></activity>
+        <activity android:name="WifiListActivity" android:theme="@style/AppTheme">
+                 
+        </activity>
+        <activity android:name="ShowWifiListActivity" android:theme="@style/AppTheme"></activity>
+        <activity android:name="WifiLBSActivity" android:theme="@style/AppTheme">       
+     
+            </activity>
+        <activity android:name="CameraActivity" android:theme="@style/AppTheme">
+     
+            
+        </activity>
+        <activity android:name="MainActivity"  android:theme="@style/AppTheme">
+               <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+    </application>
+
+</manifest>

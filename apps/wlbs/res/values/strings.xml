@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WLAN定位</string>
+    <string name="app_desc">在无线局域网中快速构建未知区域的WiFi地图并能实现精准室内定位的工具</string>
+</resources>

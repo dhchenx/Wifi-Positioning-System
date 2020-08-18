@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/main_top"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/top_pannel" />
+
+        </LinearLayout>
+
+        <TwoLineListItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:mode="twoLine" >
+
+            <TextView
+                android:id="@android:id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="6dip"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#00FF00" />
+
+            <TextView
+                android:id="@android:id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@android:id/text1"
+                android:layout_below="@android:id/text1"
+                android:drawingCacheQuality="auto"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#00FF00" />
+
+            <ListView
+                android:id="@+id/android:list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:cacheColorHint="#00000000"
+                android:divider="#FFFFCC"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="true"
+                android:scrollingCache="false" />
+        </TwoLineListItem>
+
+    </LinearLayout>

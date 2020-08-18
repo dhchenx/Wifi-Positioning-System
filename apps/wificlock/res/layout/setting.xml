@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/main_top"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/top_pannel" />
+
+        </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:orientation="vertical" 
+         android:background="@drawable/bg"
+         >
+
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:scrollbars="vertical" >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical" >
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="10dp"
+                     android:orientation="vertical" >
+
+                     <TextView
+                         android:id="@+id/textView3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="闹钟名称"
+                         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                     <TextView
+                         android:id="@+id/textView8"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="闹钟的唯一标记，可填写地点等信息"
+                         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                     <EditText
+                         android:id="@+id/clock_id"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:ems="10" />
+
+                     <TextView
+                         android:id="@+id/textView5"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="提醒信息"
+                         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                     <TextView
+                         android:id="@+id/textView9"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="闹钟激活的时候所提醒的信息"
+                         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                     <EditText
+                         android:id="@+id/message"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:ems="10"
+                         
+                          />
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="0dp"
+                         android:orientation="vertical" >
+
+                         <TextView
+                             android:id="@+id/textView2"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="提醒方式"
+                             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                         <TextView
+                             android:id="@+id/textView10"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="通过通知推送、振动或响铃或组合形式提醒"
+                             android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                         <Spinner
+                             android:id="@+id/spinner1"
+                             style="@style/AppBaseTheme"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+
+                         <TextView
+                             android:id="@+id/textView1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="感应精度"
+                             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                         <TextView
+                             android:id="@+id/textView6"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="数值越大，越容易识别该区域，但误报率越大"
+                             android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                         <SeekBar
+                             android:id="@+id/seekBar1"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="3dp" />
+
+                         <CheckBox
+                             android:id="@+id/checkBox1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="启动位置监控" />
+
+                         <CheckBox
+                             android:id="@+id/checkBox2"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="离开区域时提醒" />
+
+                         <TextView
+                             android:id="@+id/textView4"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="定位AP"
+                             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                         <TextView
+                             android:id="@+id/textView7"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="定位AP就是Wi-Fi接入点，本应用使用其作为定位基准。"
+                             android:textAppearance="?android:attr/textAppearanceSmall" />
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         android:background="@drawable/listbg1"
+                         android:orientation="vertical" >
+
+                         <RadioGroup
+                             android:id="@+id/radioGroup2"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_margin="5dp" >
+
+                         </RadioGroup>
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+             </LinearLayout>
+         </ScrollView>
+
+     </LinearLayout>
+  
+ </LinearLayout>     
