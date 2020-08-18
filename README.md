@@ -32,13 +32,13 @@ WLBS is a client-server app that can create, build and use Wifi maps for navigat
 
 ### WifiClock
 
-![](images/wificlock/slide1.png)
+![](images/wificlock/1.png)
 
-![](images/wificlock/slide2.png)
+![](images/wificlock/2.png)
 
-![](images/wificlock/slide3.png)
+![](images/wificlock/3.png)
 
-![](images/wificlock/slide4.png)
+![](images/wificlock/4.png)
 
 
 
